@@ -1,1 +1,21 @@
+#playerOne {
+    background: teal;
+    justify-center: center;
+    width: 200px;
+}
 
+  #playerTwo {
+    background: teal;
+    justify-center: center;
+    width: 200px;
+}
+
+
+  img {
+    justify-self: center;
+    width: 100px;
+    border-radius: 100%;
+    border: 15px solid transparent;
+    border-image-source:  url(https://uploads-ssl.webflow.com/5e1d06aff955a024e5feff7c/5e1d074873c54c8041c38c03_Sparkles.gif);
+    border-image-slice: 60 30;
+  }
