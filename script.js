@@ -5,8 +5,8 @@ class Player {
     set title(title) {
         this.title = title;
     }
-    set encouragement(num) {
-        this.encouragement = num;
+    set encouragementMeter(num) {
+        this.encouragementMeter = num;
     }
     get name() {
         return this.name;
@@ -15,7 +15,7 @@ class Player {
         return this.title;
     }
     get encouragement() {
-        return this.encouragement
+        return this.encouragementMeter
     }
 
     constructor(name) {
