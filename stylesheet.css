@@ -1,1 +1,80 @@
 
+* {
+    box-sizing: border-box;
+
+  }
+  
+  h1 {
+    font-family: "Inknut Antiqua", serif;
+    font-size: 50px;
+    color: white;
+  }
+  
+  h2 {
+    font-size: 40px;
+  }
+  
+  h3 {
+    font-size: 25px;
+    text-align: center;
+  }
+  
+  p {
+    font-size: 14px;
+  }
+  
+  img {
+    border-radius: 25%;
+    width: 250px;
+    height: 250px;
+    align-items: center;
+  }
+  
+  .container {
+    background-image: url("https://images.unsplash.com/photo-1618688259579-54fc3b432a3b?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1170&q=80");
+    background-repeat: no-repeat;
+    background-size: contain;
+    justify-content: center;
+    background-color: #ffe3ab;
+    padding: 20px;
+  }
+  
+  #fightbox {
+      display: flex;
+      flex-direction: row;
+      margin: 25px;
+    width: 1000px;
+    background: none;
+  }
+
+  
+  #player1, #player2 {
+    /* justify-content: spaced-evenly; */
+    width: 45%;
+    padding: 50px;
+    background-color: #7e4e2e;
+    color: #ffe3ab;
+  }
+
+  #player1 {float: left;}
+
+  #player2 {float: right;}
+  meter {
+    width: 100px;
+    height: 25px;
+    justify-items: center;
+  }
+
+  #buttonbox1, #buttonbox2 {
+    align-items: flex-end;
+    padding: 100px;
+
+  }
+/*   
+  #player2 {
+    float: right;
+    width: 45%;
+    padding: 50px;
+    background-color: #7e4e2e;
+    color: #ffe3ab;
+  } */
