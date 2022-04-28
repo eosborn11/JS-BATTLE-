@@ -26,3 +26,12 @@ class Player {
 
 let p1 = new Player();
 console.log(p1.name)
+//dom reference
+const name = document.getElementById("name");
+
+//reset 
+reset(){
+this.name = "";
+this.encouragementMeter = 100;
+this.encouragementBonus = "";
+}
