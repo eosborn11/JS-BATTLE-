@@ -24,7 +24,7 @@ class Player {
         return this.encouragementMeter
     }
 
-    constructor(name) {
+    constructor(name,title) {
         this.name = name;
         this.title = title;
     }
@@ -34,7 +34,7 @@ class Player {
 //reset 
 reset(){
   this.name = "";
-  this.encouragementMeter = 100;
+  this.encouragementMeter = 0;
   this.encouragementBonus = "";
   }
 
