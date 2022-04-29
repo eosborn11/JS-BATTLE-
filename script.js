@@ -1,3 +1,7 @@
+//example of where to do dom links
+//const playerOneName = document.getElementById("name");
+//const playerTwoName = document.getElementById("name");
+
 class Player {
     set name(name) {
         this.name = name;
@@ -22,19 +26,20 @@ class Player {
         this.name = name;
         this.title = title;
     }
-}
 
-let p1 = new Player();
-console.log(p1.name)
-//dom reference
-const name = document.getElementById("name");
 
+    
 //reset 
 reset(){
-this.name = "";
-this.encouragementMeter = 100;
-this.encouragementBonus = "";
+  this.name = "";
+  this.encouragementMeter = 100;
+  this.encouragementBonus = "";
+  }
+
+
 }
+
+
 function getAllInfo() {
   meterDetails();
   return (
@@ -57,3 +62,4 @@ function meterDetails() {
   } else {
     return "happy face by meter" + "I'm feeling happy display in html";
   }
+}
