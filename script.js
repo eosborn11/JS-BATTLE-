@@ -57,4 +57,4 @@ function meterDetails() {
   } else {
     return "happy face by meter" + "I'm feeling happy display in html";
   }
-}
+} 
