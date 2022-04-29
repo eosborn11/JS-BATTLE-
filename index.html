@@ -15,33 +15,47 @@
   </head>
   <body>
     <div class="container">
-    <h1>Battle Screen</h1>
-    <h2>Round 1</h2>
-    <div id="fightbox">
-      <div id="player1">
-        <img src="https://images.unsplash.com/photo-1649888137201-491856105a1a?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=870&q=80" alt="fighter">
-        <h3 id ="playerName">Player Name</h3>
-        <meter></meter>
-      </div>
-      <div id="buttonbox1">
-        <button></button>
-        <button></button>
-        <button></button>
-      </div>
+    <h1 id="title">HEALTHY TECHIE</h1>
 
+    <div id="fightbox">
+        
+      <div id="player1">
+        <h3 id="turn"> Your Turn</h3>
+        <img class="photo" src="https://www.billionsinstitute.com/wp-content/uploads/2017/02/nicole-headshot-circle.png" alt="fighter">
+        <h3 id="playerOneName">Player Name</h3>
+        <h4 id="playerTwoTitle">job title</h4>
+        
+        <p id="imFeeling"> I'm feeling...</p>
+        <p id="emoji">☹️ 😉 😁</p>
+        <meter min="0" low="10" optimum="50" high="80" max="100">
+        </meter>
+
+      <div id="buttonbox1">
+        <button>Hype</button> <br>
+        <button>Feed</button> <br>
+        <button>Hug</button> 
+      </div>
+    </div> <!--- end player1 --> 
 
       <div id="player2">
-      <img src="https://images.unsplash.com/photo-1491756975177-a13d74ed1e2f?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mjd8fGJsYWNrJTIwZmlnaHRlcnN8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60" alt="">
-      <h3 id = "playerName">Player Name2</h3>
-      <meter></meter>
-    </div>
+        <h3 id="turn"> Your Turn </h3>
+      <img class="photo" src="https://sincerelyvictoriat.com/wp-content/uploads/2019/11/round-profile-picture-1.png" alt="">
+      <h3 id="playerTwoName">Player Name2</h3>
+      <h4 id="playerTwoTitle">job title</h4>
+        <p id="imFeeling"> I'm feeling... </p>
+        <p id="emoji">☹️ 😉 😁</p>
+      <meter min="0" low="10" optimum="50" high="80" max="100">
+      </meter>
     <div id="buttonbox2">
-      <button></button>
-      <button></button>
-      <button></button>
-    </div>
-  </div>
+      <button>Coffee</button> <br>
+      <button>Walk</button> <br>
+      <button>Compliment</button>
+    </div> <!-- end buttonbox2 -->
+  </div> <!-- end player2 -->
 
+  </div><!-- end fightbox -->
+
+</div> <!-- end container -->
     <script src="script.js"></script>
   </body>
 </html>

@@ -1,3 +1,9 @@
+//example of where to do dom links
+//const playerOneName = document.getElementById("name");
+//const playerTwoName = document.getElementById("name");
+const emoji = document.getElementById("#emoji");
+const imFeeling = document.getElementById("#imFeeling");
+
 class Player {
     set name(name) {
         this.name = name;
@@ -22,19 +28,20 @@ class Player {
         this.name = name;
         this.title = title;
     }
-}
 
-let p1 = new Player();
-console.log(p1.name)
-//dom reference
-const name = document.getElementById("name");
 
+    
 //reset 
 reset(){
-this.name = "";
-this.encouragementMeter = 100;
-this.encouragementBonus = "";
+  this.name = "";
+  this.encouragementMeter = 100;
+  this.encouragementBonus = "";
+  }
+
+
 }
+
+
 function getAllInfo() {
   meterDetails();
   return (
@@ -53,8 +60,16 @@ function getAllInfo() {
 function meterDetails() {
   // Returns the Encouragement Level
   if (parseInt(this._encouragementMeter) < 50) {
-    return "frowny face by meter" + "I'm feeling sad display in html";
+    emoji.innerHTML = "☹️";
+    imFeeling.innerHTML = "I'm feeling sad";
+  } else if (
+    parseInt(this._encouragementMeter) < 75 &&
+    parseInt(this._encouragementMeter) > 50
+  ) {
+     emoji.innerHTML = "😉";
+     imFeeling.innerHTML = "I'm feeling good";
   } else {
-    return "happy face by meter" + "I'm feeling happy display in html";
+     emoji.innerHTML = "😁";
+     imFeeling.innerHTML = "I'm feeling great";
   }
-} 
+}
