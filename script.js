@@ -47,6 +47,8 @@ class Player {
 		return this._health;
 	}
 
+  let cam = new Player("Ester", "Fullstack JS");
+
 	constructor(n, t, l, w, h) {
 		this.reset();
 		this._name = n;
