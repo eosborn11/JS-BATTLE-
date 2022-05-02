@@ -49,12 +49,14 @@ function getAllInfo() {
     "\n" +
     "Title:" +
     this.title +
-    "\n" + "encouragementMeter:" +
+    "\n" +
+    "encouragementMeter:" +
     this.encouragementMeter +
     "\n"
   );
 }
 
+//meter functions
 function meterDetails() {
   // Returns the Encouragement Level
   if (parseInt(this._encouragementMeter) < 50) {
@@ -72,14 +74,16 @@ function meterDetails() {
   }
   p1_meter.textContent =
     parseInt(p1_meter.textContent) + parseInt(givePoints(current_abilty));
-   p2_meter.textContent =
-     parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
+  p2_meter.textContent =
+    parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
 }
 
+//my player object
 let mars = new Player("Mars", "Fullstack Developer");
 
-function chooseRandomPlayers(){
-  randomNumber = Math.floor(Math.random()*player_array.length);
+//randomize player cards
+function chooseRandomPlayers() {
+  randomNumber = Math.floor(Math.random() * player_array.length);
   current_player_1 = player_array[randomNumber];
   player_array.splice(randomNumber, 1);
   current_player_2 = player_array[randomNumber];
@@ -87,3 +91,21 @@ function chooseRandomPlayers(){
 }
 
 chooseRandomPlayers();
+
+//randomize abilities
+function randomAbilities() {
+  p1_btn1.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p1_btn2.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p1_btn3.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p2_btn1.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p2_btn2.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p2_btn3.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+}
+
+randomAbilities();
