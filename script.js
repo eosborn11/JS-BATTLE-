@@ -1,3 +1,20 @@
+const p1 = document.getElementById("player1");
+const p2 = document.getElementById("player2");
+const p1_btn1 = document.getElementById("playerOne_ButtonOne");
+const p1_btn2 = document.getElementById("playerOne_ButtonTwo");
+const p1_btn3 = document.getElementById("playerOne_ButtonThree");
+const p1_name = document.getElementById("playerOne_Name");
+const p1_title = document.getElementById("playerOne_Title");
+const p1_feelings = document.getElementById("playerOne_Feelings");
+const p1_meter = document.getElementById("playerOne_MeterNumber");
+const p2_btn1 = document.getElementById("playerTwo_ButtonOne");
+const p2_btn2 = document.getElementById("playerTwo_ButtonTwo");
+const p2_btn3 = document.getElementById("playerTwo_ButtonThree");
+const p2_name = document.getElementById("playerTwo_Name");
+const p2_title = document.getElementById("playerTwo_Title");
+const p2_feelings = document.getElementById("playerTwo_Feelings");
+const p2_meter = document.getElementById("playerTwo_MeterNumber");
+
 class Player {
 	set name(n) {
 		this._name = n;
