@@ -35,9 +35,7 @@ reset(){
   this.encouragementMeter = 100;
   this.encouragementBonus = "";
   }
-
-
-}
+  
 
 
 function getAllInfo() {
@@ -62,4 +60,14 @@ function meterDetails() {
   } else {
     return "happy face by meter" + "I'm feeling happy display in html";
   }
+}
+//player 1 turn initiated on start 
+function init(){
+const player1 = {
+  isTurn: true,
+  }
+}
+Player{
+  name:"Erica Osborn",
+  title: "Software Engineer"
 }
