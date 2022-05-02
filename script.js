@@ -4,6 +4,10 @@
 const emoji = document.getElementById("#emoji");
 const imFeeling = document.getElementById("#imFeeling");
 const encouragementMeter = document.getElementById("#meter");
+const p1_feelings = document.getElementById("playerOne_Feelings");
+const p1_meter = document.getElementById("playerOne_MeterNumber");
+const p2_feelings = document.getElementById("playerTwo_Feelings");
+const p2_meter = document.getElementById("playerTwo_MeterNumber");
 
 class Player {
   set name(name) {
@@ -33,11 +37,10 @@ class Player {
   //reset
   reset() {
     this.name = "";
-    this.encouragementMeter = 0;
+    this.encouragementMeter = 100;
     this.encouragementBonus = "";
   }
 }
-encouragementMeter = this.encouragementMeter;
 
 function getAllInfo() {
   meterDetails();
@@ -47,8 +50,8 @@ function getAllInfo() {
     "\n" +
     "Title:" +
     this.title +
-    "\n" +
-    encouragementMeter +
+    "\n" + "encouragementMeter:" +
+    this.encouragementMeter +
     "\n"
   );
 }
@@ -69,3 +72,5 @@ function meterDetails() {
     imFeeling.innerHTML = "I'm feeling great";
   }
 }
+
+let mars = new Player("Mars", "Fullstack Developer");
