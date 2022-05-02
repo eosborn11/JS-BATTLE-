@@ -3,7 +3,6 @@
 //const playerTwoName = document.getElementById("name");
 const emoji = document.getElementById("#emoji");
 const imFeeling = document.getElementById("#imFeeling");
-const encouragementMeter = document.getElementById("#meter");
 const p1_feelings = document.getElementById("playerOne_Feelings");
 const p1_meter = document.getElementById("playerOne_MeterNumber");
 const p2_feelings = document.getElementById("playerTwo_Feelings");
@@ -71,6 +70,20 @@ function meterDetails() {
     emoji.innerHTML = "😁";
     imFeeling.innerHTML = "I'm feeling great";
   }
+  p1_meter.textContent =
+    parseInt(p1_meter.textContent) + parseInt(givePoints(current_abilty));
+   p2_meter.textContent =
+     parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
 }
 
 let mars = new Player("Mars", "Fullstack Developer");
+
+function chooseRandomPlayers(){
+  randomNumber = Math.floor(Math.random()*player_array.length);
+  current_player_1 = player_array[randomNumber];
+  player_array.splice(randomNumber, 1);
+  current_player_2 = player_array[randomNumber];
+  return randomNumber;
+}
+
+chooseRandomPlayers();
