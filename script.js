@@ -63,3 +63,40 @@ function meterDetails() {
     return "happy face by meter" + "I'm feeling happy display in html";
   }
 }
+let Lucas = new player("Lucas", "Backend Engineer");
+
+let ability_points = 0;
+
+function givePoints(ability){
+
+    switch (ability) {
+      case "Gift":
+        ability_points = 7;
+        return ability_points;
+  
+      case "Coffee":
+        ability_points = 4;
+        return ability_points;
+  
+      case "Walk":
+        ability_points = 3;
+        return ability_points;
+  
+      case "Chocolate":
+        ability_points = 13;
+        return ability_points;
+  
+      case "Inspire":
+        ability_points = 9;
+        return ability_points;
+  
+      case "Lunch":
+        ability_points = 15;
+        return ability_points;
+  
+      default:
+        ability_points = 0;
+        break;
+    }
+  
+  }
