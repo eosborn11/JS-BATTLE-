@@ -46,9 +46,6 @@ class Player {
 	get health() {
 		return this._health;
 	}
-
-  let cam = new Player("Ester", "Fullstack JS");
-
 	constructor(n, t, l, w, h) {
 		this.reset();
 		this._name = n;
@@ -58,7 +55,7 @@ class Player {
 		//this._health=5;
 	}
 
-	reset() {
+  reset() {
 		// Start/restart the game
 		this._level = "5";
 		this._type = "Peasant";
@@ -121,8 +118,7 @@ class Player {
 	}
 }
 
-var player1 = new Player("Atrus");
-var player2 = new Player("Gehn");
+let cam = new Player("Cam", "Fullstack JS");
 
 function initGame() {
 	player1.reset();
