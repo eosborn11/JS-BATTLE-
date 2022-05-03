@@ -79,13 +79,16 @@ function meterDetails() {
 
 //player objects
 let filmon = new Player("Filmon", "UX Engineer");
-let mars = new Player("Mars", "Fullstack JS");
-let erica = new Player("Erica", "Software Engineer");
-let cam = new Player("Cam", "Fullstack JS");
-let jenny = new Player("Jenny", "Software Engineer");
-let dravon = new Player("Dravon", "Product Manager");
-let alvian = new Player("Alvian", "Product");
-let lucas = new Player("Lucas", "Fullstack Engineer");
+let mars = new Player("Mars Brown", "Fullstack JS");
+let cam = new Player("Cam Quevedo", "Fullstack JS");
+let jenny = new Player("Jenny Nou", "Software Engineer");
+let dravon = new Player("Dravon Tyson", "Product Manager");
+let alvian = new Player("Alvian Williams", "Product Manager");
+let lucas = new Player("Lucas Rangel", "Fullstack Engineer");
+let khris = new Player("Khris Goins", "Freelance Front-End Engineer");
+let zakiyah = new Player("Zakiyah Muhammad", "Front-End Developer");
+let isaac = new Player("Isaac Porter", "Software Engineer");
+let tuerei = new Player("Tuerei Williams", "Product Manager");
 let player_array = [
   filmon,
   erica,
@@ -96,6 +99,10 @@ let player_array = [
   rikki,
   lucas,
   alvian,
+  khris,
+  zakiyah,
+  isaac,
+  tuerei,
 ];
 //
 let randomNumber;
