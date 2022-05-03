@@ -1,6 +1,121 @@
 //example of where to do dom links
 //const playerOneName = document.getElementById("name");
 //const playerTwoName = document.getElementById("name");
+//DOM Elements
+
+let rikki = new Player ("Rikki","Fullstack Engineer" )
+
+p1_name.textContent = current_player_1.name;
+p1_title.textContent = current_player_1.title;
+playerOne_btn1.addEventListener("click", playerOne_btn1_clicked);
+playerOne_btn2.addEventListener("click", playerOne_btn2_clicked);
+playerOne_btn3.addEventListener("click", playerOne_btn3_clicked);
+
+playerTwo_btn1.addEventListener("click", playerTwo_btn1_clicked);
+playerTwo_btn2.addEventListener("click", playerTwo_btn2_clicked);
+playerTwo_btn3.addEventListener("click", playerTwo_btn3_clicked);
+
+function playerOne_btn1_clicked(e){
+  console.log(e.target.textContent);
+  current_ability = e.target.textContent;
+  console.log(givePoints(current_ability));
+  p2_meter.textContent = parseInt(p2_meter.textContent) + parseInt(givePoints(current_ability));
+  p1.style.transform = "scale(.8)";
+  p1.style.opacity = ".8";
+  p1.style.pointerEvents = 'none';
+
+  p2.style.transform = "scale(1)";
+  p2.style.opacity = "1";
+  p2.style.pointerEvents = "auto";
+  randomAbilities();
+}
+function p1_btn2_clicked(e){
+  // alert(e.target.textContent);
+  // alert(p2_meter.textContent);
+  console.log(e.target.textContent);
+  current_abilty = e.target.textContent;
+  console.log(givePoints(current_abilty));
+  p2_meter.textContent = parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
+  p1.style.transform = "scale(.8)";
+  p1.style.opacity = ".8";
+  p1.style.pointerEvents = "none";
+
+  p2.style.transform = "scale(1)";
+  p2.style.opacity = "1";
+  p2.style.pointerEvents = "auto";
+  randomAbilities();
+}
+
+function p1_btn3_clicked(e){
+  // alert(e.target.textContent);
+  // alert(p2_meter.textContent);
+  console.log(e.target.textContent);
+  current_abilty = e.target.textContent;
+  console.log(givePoints(current_abilty));
+  p2_meter.textContent = parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
+  p1.style.transform = "scale(.8)";
+  p1.style.opacity = ".8";
+  p1.style.pointerEvents = "none";
+
+  p2.style.transform = "scale(1)";
+  p2.style.opacity = "1";
+  p2.style.pointerEvents = "auto";
+  randomAbilities();
+
+}
+
+function p2_btn1_clicked(e){
+  // alert(e.target.textContent);
+  // alert(p2_meter.textContent);
+  console.log(e.target.textContent);
+  current_abilty = e.target.textContent;
+  console.log(givePoints(current_abilty));
+  p1_meter.textContent = parseInt(p1_meter.textContent) + parseInt(givePoints(current_abilty));
+  p2.style.transform = "scale(.8)";
+  p2.style.opacity = ".8";
+  p2.style.pointerEvents = "none";
+
+  p1.style.transform = "scale(1)";
+  p1.style.opacity = "1";
+  p1.style.pointerEvents = "auto";
+  randomAbilities();
+
+}
+
+function p2_btn2_clicked(e){
+  // alert(e.target.textContent);
+  // alert(p2_meter.textContent);
+  console.log(e.target.textContent);
+  current_abilty = e.target.textContent;
+  console.log(givePoints(current_abilty));
+  p1_meter.textContent = parseInt(p1_meter.textContent) + parseInt(givePoints(current_abilty));
+  p2.style.transform = "scale(.8)";
+  p2.style.opacity = ".8";
+  p2.style.pointerEvents = "none";
+
+  p1.style.transform = "scale(1)";
+  p1.style.opacity = "1";
+  p1.style.pointerEvents = "auto";
+  randomAbilities();
+}
+
+function p2_btn3_clicked(e){
+  // alert(e.target.textContent);
+  // alert(p2_meter.textContent);
+  console.log(e.target.textContent);
+  current_abilty = e.target.textContent;
+  console.log(givePoints(current_abilty));
+  p1_meter.textContent = parseInt(p1_meter.textContent) + parseInt(givePoints(current_abilty));
+  p2.style.transform = "scale(.8)";
+  p2.style.opacity = ".8";
+  p2.style.pointerEvents = "none";
+
+  p1.style.transform = "scale(1)";
+  p1.style.opacity = "1";
+  p1.style.pointerEvents = "auto";
+  randomAbilities();
+
+}
 
 class Player {
     set name(name) {
