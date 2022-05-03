@@ -67,7 +67,5 @@ const player1 = {
   isTurn: true,
   }
 }
-Player{
-  name:"Erica Osborn",
-  title: "Software Engineer"
-}
+
+let Erica = new Player("Erica", "Software Engineer");
