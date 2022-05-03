@@ -1,6 +1,5 @@
-//example of where to do dom links
-//const playerOneName = document.getElementById("name");
-//const playerTwoName = document.getElementById("name");
+let ability_array = ["Gift", "Lunch", "Coffee", "Walk", "Chocolate", "Inspire"];
+
 const emoji = document.getElementById("#emoji");
 const imFeeling = document.getElementById("#imFeeling");
 const p1_feelings = document.getElementById("playerOne_Feelings");
@@ -78,8 +77,19 @@ function meterDetails() {
     parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
 }
 
-//my player object
-let mars = new Player("Mars", "Fullstack Developer");
+//player objects
+let filmon = new Player("Filmon", "UX Engineer");
+let mars = new Player("Mars", "Fullstack JS");
+let erica = new Player("Erica", "Software Engineer");
+let cam = new Player("Cam", "Fullstack JS");
+let jenny = new Player ("Jenny", "Software Engineer”);
+let dravon = new Player("Dravon", "Product Manager");
+
+let player_array = [filmon, erica, mars, cam, dravon, jenny];
+//
+let randomNumber;
+let current_player_1;
+let current_player_2;
 
 //randomize player cards
 function chooseRandomPlayers() {

@@ -31,26 +31,26 @@ h2 {
   font-size: 40px;
 }
 
-#playerOneName {
-  font-size: 25px;
+#playerOne_Name {
+  font-size: 40px;
   text-align: center;
-  margin-bottom: -1.2em;
+  margin-bottom: -0.7em;
 }
 
-#playerTwoName {
-  font-size: 25px;
+#playerTwo_Name {
+  font-size: 40px;
   text-align: center;
-  margin-bottom: -1.2em;
+  margin-bottom: -0.7em;
 }
 
-#playerOneTitle {
-  font-size: 25px;
+#playerOne_Title {
+  font-size: 19px;
   text-align: center;
   margin-bottom: -0.4em;
 }
 
-#playerTwoTitle {
-  font-size: 25px;
+#playerTwo_Title {
+  font-size: 19px;
   text-align: center;
   margin-bottom: -0.4em;
 }
@@ -76,8 +76,7 @@ p {
   display: flex;
   flex-direction: row;
   margin: 25px;
-  width: 750px;
-  height: 525px;
+  width: 1000px;
   background: none;
 }
 
@@ -98,36 +97,34 @@ p {
 }
 
 #player1 {
+  transform: scale(1);
 }
 
 #player2 {
+  transform: scale(1);
 }
 
 button {
   width: 140px;
   height: 40px;
-  border-radius: 50%;
+  border-radius: 5px;
   border: none;
   margin: 0.2em;
 }
 
-#emoji {
-}
-
 #buttonbox1,
 #buttonbox2 {
-  padding: 30px;
 }
 /*   
-    #player2 {
-      float: right;
-      width: 45%;
-      padding: 50px;
-      background-color: #7e4e2e;
-      color: #ffe3ab;
-    } */
+  #player2 {
+    float: right;
+    width: 45%;
+    padding: 50px;
+    background-color: #7e4e2e;
+    color: #ffe3ab;
+  } */
 .meter {
-  width: 100px !important;
-  height: 100px !important;
+  width: 200px;
+  height: 25px;
   justify-items: center;
 }
