@@ -82,10 +82,11 @@ let filmon = new Player("Filmon", "UX Engineer");
 let mars = new Player("Mars", "Fullstack JS");
 let erica = new Player("Erica", "Software Engineer");
 let cam = new Player("Cam", "Fullstack JS");
-let jenny = new Player ("Jenny", "Software Engineer”);
+let jenny = new Player("Jenny", "Software Engineer");
 let dravon = new Player("Dravon", "Product Manager");
-
-let player_array = [filmon, erica, mars, cam, dravon, jenny];
+let alvian = new Player("Alvian", "Product");
+let lucas = new Player("Lucas", "Fullstack Engineer");
+let player_array = [filmon, erica, mars, cam, dravon, jenny, rikki, lucas];
 //
 let randomNumber;
 let current_player_1;
