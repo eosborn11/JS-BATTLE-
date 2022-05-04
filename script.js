@@ -3,7 +3,7 @@
 //const playerTwoName = document.getElementById("name");
 //DOM Elements
 
-let rikki = new Player ("Rikki","Fullstack Engineer" )
+let rikki = new Player ("Rikki","Fullstack Engineer"nf )
 
 p1_name.textContent = current_player_1.name;
 p1_title.textContent = current_player_1.title;
