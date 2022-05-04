@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 //example of where to do dom links
 //const playerOneName = document.getElementById("name");
 //const playerTwoName = document.getElementById("name");
@@ -141,19 +142,49 @@ class Player {
         this.name = name;
         this.title = title;
     }
+=======
+let ability_array = ["Gift", "Lunch", "Coffee", "Walk", "Chocolate", "Inspire"];
+>>>>>>> 7c495c2d78bcc6847ee4b0ea32db5395b84c9c7c
 
+const emoji = document.getElementById("#emoji");
+const imFeeling = document.getElementById("#imFeeling");
+const p1_feelings = document.getElementById("playerOne_Feelings");
+const p1_meter = document.getElementById("playerOne_MeterNumber");
+const p2_feelings = document.getElementById("playerTwo_Feelings");
+const p2_meter = document.getElementById("playerTwo_MeterNumber");
 
-    
-//reset 
-reset(){
-  this.name = "";
-  this.encouragementMeter = 100;
-  this.encouragementBonus = "";
+class Player {
+  set name(name) {
+    this.name = name;
+  }
+  set title(title) {
+    this.title = title;
+  }
+  set encouragementMeter(num) {
+    this.encouragementMeter = num;
+  }
+  get name() {
+    return this.name;
+  }
+  get title() {
+    return this.title;
+  }
+  get encouragement() {
+    return this.encouragementMeter;
   }
 
+  constructor(name, title) {
+    this.name = name;
+    this.title = title;
+  }
 
+  //reset
+  reset() {
+    this.name = "";
+    this.encouragementMeter = 100;
+    this.encouragementBonus = "";
+  }
 }
-
 
 function getAllInfo() {
   meterDetails();
@@ -170,11 +201,85 @@ function getAllInfo() {
   );
 }
 
+//meter functions
 function meterDetails() {
   // Returns the Encouragement Level
   if (parseInt(this._encouragementMeter) < 50) {
-    return "frowny face by meter" + "I'm feeling sad display in html";
+    emoji.innerHTML = "☹️";
+    imFeeling.innerHTML = "I'm feeling sad";
+  } else if (
+    parseInt(this._encouragementMeter) < 75 &&
+    parseInt(this._encouragementMeter) > 50
+  ) {
+    emoji.innerHTML = "😉";
+    imFeeling.innerHTML = "I'm feeling good";
   } else {
-    return "happy face by meter" + "I'm feeling happy display in html";
+    emoji.innerHTML = "😁";
+    imFeeling.innerHTML = "I'm feeling great";
   }
+  p1_meter.textContent =
+    parseInt(p1_meter.textContent) + parseInt(givePoints(current_abilty));
+  p2_meter.textContent =
+    parseInt(p2_meter.textContent) + parseInt(givePoints(current_abilty));
 }
+
+//player objects
+let filmon = new Player("Filmon", "UX Engineer");
+let mars = new Player("Mars Brown", "Fullstack JS");
+let cam = new Player("Cam Quevedo", "Fullstack JS");
+let jenny = new Player("Jenny Nou", "Software Engineer");
+let dravon = new Player("Dravon Tyson", "Product Manager");
+let alvian = new Player("Alvian Williams", "Product Manager");
+let lucas = new Player("Lucas Rangel", "Fullstack Engineer");
+let khris = new Player("Khris Goins", "Freelance Front-End Engineer");
+let zakiyah = new Player("Zakiyah Muhammad", "Front-End Developer");
+let isaac = new Player("Isaac Porter", "Software Engineer");
+let tuerei = new Player("Tuerei Williams", "Product Manager");
+let player_array = [
+  filmon,
+  erica,
+  mars,
+  cam,
+  dravon,
+  jenny,
+  rikki,
+  lucas,
+  alvian,
+  khris,
+  zakiyah,
+  isaac,
+  tuerei,
+];
+//
+let randomNumber;
+let current_player_1;
+let current_player_2;
+
+//randomize player cards
+function chooseRandomPlayers() {
+  randomNumber = Math.floor(Math.random() * player_array.length);
+  current_player_1 = player_array[randomNumber];
+  player_array.splice(randomNumber, 1);
+  current_player_2 = player_array[randomNumber];
+  return randomNumber;
+}
+
+chooseRandomPlayers();
+
+//randomize abilities
+function randomAbilities() {
+  p1_btn1.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p1_btn2.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p1_btn3.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p2_btn1.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p2_btn2.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+  p2_btn3.textContent =
+    ability_array[Math.floor(Math.random() * ability_array.length)];
+}
+
+randomAbilities();
