@@ -3,16 +3,30 @@
 //const playerOneName = document.getElementById("name");
 //const playerTwoName = document.getElementById("name");
 //DOM Elements
+let ability_array = ["Gift", "Lunch", "Coffee", "Walk", "Chocolate", "Inspire"];
 
-let rikki = new Player ("Rikki","Fullstack Engineer"nf )
+const emoji = document.getElementById("#emoji");
+const imFeeling = document.getElementById("#imFeeling");
+const p1_feelings = document.getElementById("playerOne_Feelings");
+const p1_meter = document.getElementById("playerOne_MeterNumber");
+const p2_feelings = document.getElementById("playerTwo_Feelings");
+const p2_meter = document.getElementById("playerTwo_MeterNumber");
 
+const p1_btn1 = document.getElementById("playerOne_ButtonOne"),
+   p1_btn2 = document.getElementById("playerOne_ButtonTwo"),
+   p1_btn3 = document.getElementById("playerOne_ButtonThree"),
+   p2_btn1 = document.getElementById("playerTwo_ButtonOne"),
+   p2_btn2 = document.getElementById("playerTwo_ButtonTwo"),
+   p2_btn3 = document.getElementById ("playerTwo_ButtonThree");
+
+   
 p1_name.textContent = current_player_1.name;
 p1_title.textContent = current_player_1.title;
 p1_btn1.addEventListener("click", p1_btn1_clicked);
 p1_btn2.addEventListener("click", p1_btn2_clicked);
 p1_btn3.addEventListener("click", p1_btn3_clicked);
 
-playerTwo_btn1.addEventListener("click", p2_btn1_clicked);
+pla_btn1.addEventListener("click", p2_btn1_clicked);
 playerTwo_btn2.addEventListener("click", p2_btn2_clicked);
 playerTwo_btn3.addEventListener("click", p2_btn3_clicked);
 
@@ -142,16 +156,8 @@ class Player {
         this.name = name;
         this.title = title;
     }
-=======
-let ability_array = ["Gift", "Lunch", "Coffee", "Walk", "Chocolate", "Inspire"];
->>>>>>> 7c495c2d78bcc6847ee4b0ea32db5395b84c9c7c
 
-const emoji = document.getElementById("#emoji");
-const imFeeling = document.getElementById("#imFeeling");
-const p1_feelings = document.getElementById("playerOne_Feelings");
-const p1_meter = document.getElementById("playerOne_MeterNumber");
-const p2_feelings = document.getElementById("playerTwo_Feelings");
-const p2_meter = document.getElementById("playerTwo_MeterNumber");
+
 
 class Player {
   set name(name) {
