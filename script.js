@@ -5,6 +5,11 @@
 //DOM Elements
 let ability_array = ["Gift", "Lunch", "Coffee", "Walk", "Chocolate", "Inspire"];
 
+const p1 = document.getElementById("player1"),
+  p2 =document.getElementById("player2");
+
+const p1_name = document.getElementById("playerOne_Name"),
+  p2_name = document.getElementById("playerTwo_Name");
 
 const emoji = document.getElementById("#emoji");
 const imFeeling = document.getElementById("#imFeeling");
@@ -173,7 +178,7 @@ function givePoints(ability){
 }
 
 
-// p1_name.textContent = current_player_1.name;
+p1_name.textContent = current_player_1.name;
 // p1_title.textContent = current_player_1.title;
 p1_btn1.addEventListener("click", p1_btn1_clicked);
 p1_btn2.addEventListener("click", p1_btn2_clicked);
