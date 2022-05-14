@@ -97,13 +97,6 @@ html{
     color: black;
   }
 
-  #player1 {
-    transform: scale(1);
-   }
-
-  #player2 {
-    transform: scale(1);
-  }
   meter {
     width: 100px;
     height: 25px;
@@ -129,3 +122,15 @@ html{
     background-color: #7e4e2e;
     color: #ffe3ab;
   } */
+
+
+  .popUp{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+
+  .popDown{
+    transform: scale(0.8);
+    opacity: .7;
+  }
