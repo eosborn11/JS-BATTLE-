@@ -19,37 +19,31 @@
 
     <div id="fightbox">
         
-      <div id="player1">
-        <h3 id="turn"> Your Turn</h3>
+      <div id="player1" class="popUp">
         <img class="photo" src="https://www.billionsinstitute.com/wp-content/uploads/2017/02/nicole-headshot-circle.png" alt="fighter">
-        <h3 id="playerOneName">Player Name</h3>
-        <h4 id="playerTwoTitle">job title</h4>
+        <h3 id="playerOne_Name">Rikki Clayson</h3>
+        <h4 id="playerOne_Title">Product Manager</h4>
         
-        <p id="imFeeling"> I'm feeling...</p>
-        <p id="emoji">☹️ 😉 😁</p>
-        <meter min="0" low="10" optimum="50" high="80" max="100">
-        </meter>
+        <p id="playerOne_Feelings">"Mars, let me give you some energy!"</p>
+        <p class="meternumber">0</p>
 
-      <div id="buttonbox1">
-        <button>Hype</button> <br>
-        <button>Feed</button> <br>
-        <button>Hug</button> 
+      <div id="buttonbox1" class="buttonbox">
+        <button id="playerOne_ButtonOne" data-ability="gift">Gift</button> <br>
+        <button id="playerOne_ButtonTwo"  data-ability="lunch">Lunch</button> <br>
+        <button id="playerOne_ButtonThree"  data-ability="coffee">Coffee</button> 
       </div>
     </div> <!--- end player1 --> 
 
-      <div id="player2">
-        <h3 id="turn"> Your Turn </h3>
+      <div id="player2" class="popDown">
       <img class="photo" src="https://sincerelyvictoriat.com/wp-content/uploads/2019/11/round-profile-picture-1.png" alt="">
-      <h3 id="playerTwoName">Player Name2</h3>
-      <h4 id="playerTwoTitle">job title</h4>
-        <p id="imFeeling"> I'm feeling... </p>
-        <p id="emoji">☹️ 😉 😁</p>
-      <meter min="0" low="10" optimum="50" high="80" max="100">
-      </meter>
-    <div id="buttonbox2">
-      <button>Coffee</button> <br>
-      <button>Walk</button> <br>
-      <button>Compliment</button>
+      <h3 id="playerTwo_Name">Mars Anderson</h3>
+  <h4 id="playerTwo_Title">FullStack Javascript</h4>
+    <p id="playerOne_Feelings">"Rikki, time for something fun!"</p>
+    <p class="meternumber">0</p>
+    <div id="buttonbox2" class="buttonbox">
+      <button id="playerTwo_ButtonOne" disabled data-ability="walk">Walk</button> <br>
+      <button id="playerTwo_ButtonTwo" disabled data-ability="chocolate">Chocolate</button> <br>
+      <button id="playerTwo_ButtonThree" disabled data-ability="inspire">Inspire</button> 
     </div> <!-- end buttonbox2 -->
   </div> <!-- end player2 -->
 

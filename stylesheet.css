@@ -30,26 +30,26 @@ html{
     font-size: 40px;
   }
   
-#playerOneName {
-    font-size: 25px;
+#playerOne_Name {
+    font-size: 40px;
     text-align: center;
-    margin-bottom: -1.2em;
+    margin-bottom: -.7em;
 }
 
-#playerTwoName {
-  font-size: 25px;
+#playerTwo_Name {
+  font-size: 40px;
   text-align: center;
-  margin-bottom: -1.2em;
+  margin-bottom: -.7em;
 }
 
-#playerOneTitle{
-  font-size: 25px;
+#playerOne_Title{
+  font-size: 19px;
   text-align: center;
   margin-bottom: -.4em;
 }
 
-#playerTwoTitle{
-  font-size: 25px;
+#playerTwo_Title{
+  font-size: 19px;
   text-align: center;
   margin-bottom: -.4em;
 }
@@ -97,12 +97,6 @@ html{
     color: black;
   }
 
-  #player1 {
-   }
-
-  #player2 {
-
-  }
   meter {
     width: 100px;
     height: 25px;
@@ -128,3 +122,15 @@ html{
     background-color: #7e4e2e;
     color: #ffe3ab;
   } */
+
+
+  .popUp{
+    transform: scale(1);
+    opacity: 1;
+  }
+
+
+  .popDown{
+    transform: scale(0.8);
+    opacity: .7;
+  }
